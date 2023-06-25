@@ -21,9 +21,9 @@ export default function Hero() {
       <Navbar />
       <div className="wrapper flex flex-col gap-10">
         <div className="flex flex-col gap-4 py-24">
-          <p className="font-hellix-bold text-8xl font-bold">
+          <h1 className="font-hellix-bold text-8xl font-bold">
             RAFIQ AL HAFIZH ADHA
-          </p>
+          </h1>
           <p className="text-xl">
             I'm a{" "}
             <span className="text-blue-400 underline decoration-blue-400 decoration-2">

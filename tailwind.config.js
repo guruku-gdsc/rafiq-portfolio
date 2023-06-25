@@ -13,6 +13,9 @@ module.exports = {
         "hellix-semibold": ["Hellix SemiBold", "sans-serif"],
         "hellix-bold": ["Hellix Bold", "sans-serif"],
       },
+      colors: {
+        grey1: "#ADADAD",
+      },
     },
   },
   plugins: [],
