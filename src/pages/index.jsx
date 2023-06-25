@@ -15,7 +15,6 @@ export default function Home() {
         <link rel="icon" href="/svg/logo.svg" />
       </Head>
       <main>
-        <Navbar />
         <Hero />
       </main>
     </>
