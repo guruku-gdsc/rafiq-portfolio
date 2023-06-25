@@ -37,13 +37,13 @@ const WORK_HISTORY = [
 export default function Work() {
   return (
     <div className="wrapper flex flex-col items-center gap-20 !my-20">
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4" data-aos="zoom-in">
         <h1 className="font-hellix-bold text-8xl font-bold">INDONESIA</h1>
         <p className="text-xl">Medan City, North Sumatra</p>
       </div>
       <div className="flex flex-col gap-10">
         {WORK_HISTORY.map((item, index) => (
-          <div key={index} className="flex flex-col gap-5">
+          <div key={index} className="flex flex-col gap-5" data-aos="fade-up">
             <div className="flex flex-col gap-3">
               <h2 className="font-hellix-bold text-4xl">{item.company}</h2>
               <div className="flex flex-col gap-1">

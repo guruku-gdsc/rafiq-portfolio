@@ -1,7 +1,14 @@
-import { Hero, Project, Work } from "@/components/pages";
+import { Education, Hero, Project, Work } from "@/components/pages";
 import Head from "next/head";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Head>
@@ -18,6 +25,7 @@ export default function Home() {
         <Hero />
         <Work />
         <Project />
+        <Education />
       </main>
     </>
   );
