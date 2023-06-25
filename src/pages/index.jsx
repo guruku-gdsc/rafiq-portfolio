@@ -1,4 +1,4 @@
-import { Hero, Work } from "@/components/pages";
+import { Hero, Project, Work } from "@/components/pages";
 import Head from "next/head";
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <Work />
+        <Project />
       </main>
     </>
   );
