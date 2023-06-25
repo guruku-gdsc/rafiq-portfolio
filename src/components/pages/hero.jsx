@@ -5,8 +5,12 @@ export default function Hero() {
         RAFIQ AL HAFIZH ADHA
       </p>
       <p className="text-xl">
-        A UI/UX Designer based in Medan, Indonesia. I'm available to explore new
-        projects and inspire through my work.
+        I'm a{" "}
+        <span className="text-blue-400 underline decoration-blue-400 decoration-2">
+          UI/UX Designer
+        </span>{" "}
+        based in Medan, Indonesia. I'm available to explore new projects and
+        inspire through my work.
       </p>
     </div>
   );
