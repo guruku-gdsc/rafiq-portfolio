@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { Hero, Navbar } from "@/components";
 import Head from "next/head";
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/svg/logo.svg" />
       </Head>
       <main>
+        <Navbar />
         <Hero />
       </main>
     </>

@@ -6,7 +6,14 @@
   font-family: "Hellix Regular";
   src: url("/fonts/Hellix-Regular.woff2") format("woff2");
 }
-
+@font-face {
+  font-family: "Hellix Medium";
+  src: url("/fonts/Hellix-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Hellix SemiBold";
+  src: url("/fonts/Hellix-SemiBold.woff2") format("woff2");
+}
 @font-face {
   font-family: "Hellix Bold";
   src: url("/fonts/Hellix-Bold.woff2") format("woff2");

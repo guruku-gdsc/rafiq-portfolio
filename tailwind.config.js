@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         hellix: ["Hellix Regular", "sans-serif"],
+        "hellix-medium": ["Hellix Medium", "sans-serif"],
+        "hellix-semibold": ["Hellix SemiBold", "sans-serif"],
         "hellix-bold": ["Hellix Bold", "sans-serif"],
       },
     },
