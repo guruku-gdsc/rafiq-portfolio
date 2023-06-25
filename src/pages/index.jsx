@@ -1,4 +1,4 @@
-import { Hero, Navbar } from "@/components";
+import { Hero, Navbar } from "@/components/pages";
 import Head from "next/head";
 
 export default function Home() {

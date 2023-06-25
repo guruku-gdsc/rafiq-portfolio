@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "../common/button";
 
 export default function Navbar() {
   return (
@@ -10,7 +11,7 @@ export default function Navbar() {
         <p>Project</p>
         <p>Connect</p>
       </div>
-      <button>Get Connect</button>
+      <Button>Get Connect</Button>
     </div>
   );
 }
