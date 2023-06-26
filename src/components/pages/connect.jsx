@@ -7,11 +7,12 @@ export default function Connect() {
     <div className="wrapper">
       <div className="flex flex-col gap-20 my-20">
         <div className="grid grid-cols-4 gap-4">
-          {GROUP.map((group) => (
+          {GROUP.map((group, index) => (
             <div
               key={group}
               className="w-full h-full relative aspect-square"
               data-aos="flip-left"
+              data-aos-delay={index * 200}
             >
               <Image
                 src={`/svg/group-${group}.svg`}
