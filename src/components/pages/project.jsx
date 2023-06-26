@@ -21,14 +21,14 @@ export default function Project() {
             key={index}
             href={item.link}
             target="_blank"
-            data-aos="flip-right"
+            data-aos="flip-left"
           >
             <div className="w-full relative aspect-[632/324]">
               <Image
                 src={`/svg/project/${item.name}.svg`}
                 fill
                 alt=""
-                className="rounded active:scale-95 transition cursor-pointer"
+                className="rounded hover:scale-[1.02] active:scale-95 transition cursor-pointer"
               />
             </div>
           </Link>
