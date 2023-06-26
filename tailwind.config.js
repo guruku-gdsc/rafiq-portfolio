@@ -16,6 +16,15 @@ module.exports = {
       colors: {
         grey1: "#ADADAD",
       },
+      animation: {
+        blink: "blink 1s infinite",
+      },
+      keyframes: {
+        blink: {
+          "0%, 20%, 80%, 100%": { opacity: 1 },
+          "40%, 60%": { opacity: 0 },
+        },
+      },
     },
   },
   plugins: [],

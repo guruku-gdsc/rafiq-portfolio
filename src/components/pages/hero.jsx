@@ -51,7 +51,8 @@ export default function Hero() {
                 <span className="text-blue-400 underline decoration-blue-400 decoration-2">
                   UI/UX Designer
                 </span>{" "}
-                {introText.slice(0, text.length)}
+                {introText.slice(0, text.length)}{" "}
+                <span className="animate-blink">|</span>
               </>
             )}
           </p>
