@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "../common/button";
 
 const GROUP = ["codedesign", "dza", "strum-vehicles", "mything"];
 
@@ -27,6 +28,20 @@ export default function Connect() {
           <p className="font-hellix-bold text-6xl font-bold">
             Let's create an amazing project together!
           </p>
+          <div className="flex items-center gap-8">
+            <Image src={"/svg/icon-social-figma.svg"} width={40} height={40} />
+            <Image
+              src={"/svg/icon-social-dribble.svg"}
+              width={40}
+              height={40}
+            />
+            <Image
+              src={"/svg/icon-social-behance.svg"}
+              width={40}
+              height={40}
+            />
+          </div>
+          <Button className="max-w-[180px]">Let's Get E-mail</Button>
         </div>
       </div>
     </div>

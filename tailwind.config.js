@@ -17,7 +17,7 @@ module.exports = {
         grey1: "#ADADAD",
       },
       animation: {
-        blink: "blink 1s infinite",
+        blink: "blink 0.6s infinite",
       },
       keyframes: {
         blink: {
