@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const NAVBAR = [
   { name: "WORK" },
-  { name: "EDUCATION" },
   { name: "PROJECT" },
+  { name: "EDUCATION" },
   { name: "CONNECT" },
 ];
 
