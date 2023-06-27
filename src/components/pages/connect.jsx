@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Button } from "../common/button";
+import Link from "next/link";
 
 const GROUP = ["codedesign", "dza", "strum-vehicles", "mything"];
+const SOCIAL_CONNECT = ["figma", "dribble", "behance"];
 
 export default function Connect() {
   return (
@@ -29,24 +31,17 @@ export default function Connect() {
             Let&apos;s create an amazing project together!
           </p>
           <div className="flex items-center gap-8">
-            <Image
-              src={"/svg/icon-social-figma.svg"}
-              width={40}
-              height={40}
-              alt=""
-            />
-            <Image
-              src={"/svg/icon-social-dribble.svg"}
-              width={40}
-              height={40}
-              alt=""
-            />
-            <Image
-              src={"/svg/icon-social-behance.svg"}
-              width={40}
-              height={40}
-              alt=""
-            />
+            {SOCIAL_CONNECT.map((item) => (
+              <Link key={item} href={"/"}>
+                <Image
+                  src={`/svg/icon-social-${item}.svg`}
+                  width={40}
+                  height={40}
+                  alt=""
+                  className="hover:scale-105 active:scale-95 transition"
+                />
+              </Link>
+            ))}
           </div>
           <Button className="max-w-[180px]">Let&apos;s Get E-mail</Button>
         </div>
