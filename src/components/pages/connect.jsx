@@ -41,7 +41,7 @@ export default function Connect() {
               height={40}
             />
           </div>
-          <Button className="max-w-[180px]">Let's Get E-mail</Button>
+          <Button className="max-w-[180px]">Let&apos;s Get E-mail</Button>
         </div>
       </div>
     </div>
