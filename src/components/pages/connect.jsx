@@ -29,16 +29,23 @@ export default function Connect() {
             Let&apos;s create an amazing project together!
           </p>
           <div className="flex items-center gap-8">
-            <Image src={"/svg/icon-social-figma.svg"} width={40} height={40} />
+            <Image
+              src={"/svg/icon-social-figma.svg"}
+              width={40}
+              height={40}
+              alt=""
+            />
             <Image
               src={"/svg/icon-social-dribble.svg"}
               width={40}
               height={40}
+              alt=""
             />
             <Image
               src={"/svg/icon-social-behance.svg"}
               width={40}
               height={40}
+              alt=""
             />
           </div>
           <Button className="max-w-[180px]">Let&apos;s Get E-mail</Button>
