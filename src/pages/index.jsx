@@ -1,4 +1,11 @@
-import { Connect, Education, Hero, Project, Work } from "@/components/pages";
+import {
+  Connect,
+  Education,
+  Footer,
+  Hero,
+  Project,
+  Work,
+} from "@/components/pages";
 import Head from "next/head";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,6 +34,7 @@ export default function Home() {
         <Project />
         <Education />
         <Connect />
+        <Footer />
       </main>
     </>
   );
