@@ -26,7 +26,7 @@ export default function Connect() {
         </div>
         <div className="flex flex-col gap-10">
           <p className="font-hellix-bold text-6xl font-bold">
-            Let's create an amazing project together!
+            Let&apos;s create an amazing project together!
           </p>
           <div className="flex items-center gap-8">
             <Image src={"/svg/icon-social-figma.svg"} width={40} height={40} />

@@ -47,7 +47,7 @@ export default function Hero() {
           <p className="h-14 text-xl">
             {text && (
               <>
-                I'm a{" "}
+                I&apos;m a{" "}
                 <span className="text-blue-400 underline decoration-blue-400 decoration-2">
                   UI/UX Designer
                 </span>{" "}
