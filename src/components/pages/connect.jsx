@@ -31,7 +31,7 @@ export default function Connect() {
             Let&apos;s create an amazing project together!
           </p>
           <div className="flex items-center gap-8">
-            {SOCIAL_CONNECT.map((item) => (
+            {SOCIAL_CONNECT.map((item, index) => (
               <Link key={item} href={"/"}>
                 <Image
                   src={`/svg/icon-social-${item}.svg`}
@@ -39,11 +39,19 @@ export default function Connect() {
                   height={40}
                   alt=""
                   className="hover:scale-105 active:scale-95 transition"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 200}
                 />
               </Link>
             ))}
           </div>
-          <Button className="max-w-[180px]">Let&apos;s Get E-mail</Button>
+          <Button
+            className="max-w-[180px]"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
+            Let&apos;s Get E-mail
+          </Button>
         </div>
       </div>
     </div>
