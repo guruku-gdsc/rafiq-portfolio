@@ -45,13 +45,7 @@ export default function Connect() {
               </Link>
             ))}
           </div>
-          <Button
-            className="max-w-[180px]"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
-            Let&apos;s Get E-mail
-          </Button>
+          <Button className="max-w-[180px]">Let&apos;s Get E-mail</Button>
         </div>
       </div>
     </div>
