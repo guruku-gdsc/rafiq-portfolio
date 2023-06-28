@@ -11,7 +11,7 @@ const NAVBAR = [
 ];
 
 export default function Navbar() {
-  const [showNavbar, setShowNavbar] = useState(false);
+  const [showNavbarSlide, setShowNavbarSlide] = useState(false);
 
   return (
     <div className="w-full max-w-6xl relative flex justify-between items-center py-8 max-md:pb-0 px-10 max-lg:px-6 max-md:px-4 mx-auto">
@@ -43,17 +43,17 @@ export default function Navbar() {
           height={24}
           alt=""
           className="hover:scale-105 active:scale-95 transition cursor-pointer"
-          onClick={() => setShowNavbar(!showNavbar)}
+          onClick={() => setShowNavbarSlide(!showNavbarSlide)}
         />
       </div>
       <div
         className={`w-screen h-screen fixed top-0 left-0 transition-transform z-10 ${
-          showNavbar ? "translate-y-0" : "-translate-y-full"
+          showNavbarSlide ? "translate-y-0" : "-translate-y-full"
         }`}
-        onClick={() => setShowNavbar(false)}
+        onClick={() => setShowNavbarSlide(false)}
       >
         <div
-          className="wrapper fixed top-0 left-1/2 -translate-x-1/2 flex flex-col items-center bg-black rounded-2xl !p-4"
+          className="wrapper fixed top-0 left-1/2 -translate-x-1/2 flex flex-col items-center bg-black rounded-b-2xl !p-4"
           onClick={(e) => e.stopPropagation()}
         >
           {NAVBAR.map((item, index) => (
@@ -62,7 +62,7 @@ export default function Navbar() {
               className={`text-sm font-hellix-semibold hover:text-blue-400 active:scale-95 transition cursor-pointer ${
                 index !== 0 ? "border-t" : "border-none"
               } border-white py-5`}
-              onClick={() => setShowNavbar(false)}
+              onClick={() => setShowNavbarSlide(false)}
             >
               {item.name}
             </p>
