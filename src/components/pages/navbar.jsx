@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../common/button";
 import Link from "next/link";
+import { useState } from "react";
 
 const NAVBAR = [
   { name: "WORK" },
@@ -10,8 +11,10 @@ const NAVBAR = [
 ];
 
 export default function Navbar() {
+  const [showNavbar, setShowNavbar] = useState(false);
+
   return (
-    <div className="w-full max-w-6xl flex justify-between items-center py-8 max-md:pb-0 px-10 max-lg:px-6 max-md:px-4 mx-auto">
+    <div className="w-full max-w-6xl relative flex justify-between items-center py-8 max-md:pb-0 px-10 max-lg:px-6 max-md:px-4 mx-auto">
       <Link href={"/"}>
         <div className="w-10 max-md:w-9 h-10 max-md:h-9 relative">
           <Image
@@ -40,7 +43,31 @@ export default function Navbar() {
           height={24}
           alt=""
           className="hover:scale-105 active:scale-95 transition cursor-pointer"
+          onClick={() => setShowNavbar(!showNavbar)}
         />
+      </div>
+      <div
+        className={`w-screen h-screen fixed top-0 left-0 transition-transform z-10 ${
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        }`}
+        onClick={() => setShowNavbar(false)}
+      >
+        <div
+          className="wrapper fixed top-0 left-1/2 -translate-x-1/2 flex flex-col items-center bg-black rounded-2xl !p-4"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {NAVBAR.map((item, index) => (
+            <p
+              key={item.name}
+              className={`text-sm font-hellix-semibold hover:text-blue-400 active:scale-95 transition cursor-pointer ${
+                index !== 0 ? "border-t" : "border-none"
+              } border-white py-5`}
+              onClick={() => setShowNavbar(false)}
+            >
+              {item.name}
+            </p>
+          ))}
+        </div>
       </div>
     </div>
   );
