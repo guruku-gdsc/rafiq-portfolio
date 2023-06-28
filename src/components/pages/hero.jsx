@@ -39,26 +39,24 @@ export default function Hero() {
   return (
     <div className="min-h-screen flex flex-col justify-between">
       <Navbar />
-      <div className="wrapper flex flex-col gap-10">
-        <div className="flex flex-col gap-4 py-24">
-          <h1 className="font-hellix-bold text-8xl font-bold">
-            RAFIQ AL HAFIZH ADHA
-          </h1>
-          <p className="h-14 text-xl">
-            {text && (
-              <>
-                I&apos;m a{" "}
-                <span className="text-blue-400 underline decoration-blue-400 decoration-2">
-                  UI/UX Designer
-                </span>{" "}
-                {introText.slice(0, text.length)}{" "}
-                <span className="animate-blink">|</span>
-              </>
-            )}
-          </p>
-        </div>
+      <div className="wrapper flex flex-col gap-4">
+        <h1 className="font-hellix-bold text-8xl max-md:text-7xl font-bold">
+          RAFIQ AL HAFIZH ADHA
+        </h1>
+        <p className="h-14 max-md:h-auto text-xl max-md:text-lg">
+          {text && (
+            <>
+              I&apos;m a{" "}
+              <span className="text-blue-400 underline decoration-blue-400 decoration-2">
+                UI/UX Designer
+              </span>{" "}
+              {introText.slice(0, text.length)}{" "}
+              <span className="animate-blink">|</span>
+            </>
+          )}
+        </p>
       </div>
-      <div className="w-full max-w-md flex justify-between items-center py-16 mx-auto">
+      <div className="w-full max-w-md flex flex-wrap justify-between items-center gap-6 py-16 max-md:pt-16 max-md:pb-8 px-4 mx-auto">
         {CONNECT.map((item) => (
           <p
             key={item.name}

@@ -15,7 +15,9 @@ export default function Education() {
                   alt=""
                 />
               </div>
-              <h2 className="font-hellix-bold text-4xl">EDUCATION</h2>
+              <h2 className="font-hellix-bold text-4xl max-md:text-3xl">
+                EDUCATION
+              </h2>
             </div>
             <div className="flex flex-col gap-1">
               <div className="flex justify-between items-center font-hellix-medium text-lg">

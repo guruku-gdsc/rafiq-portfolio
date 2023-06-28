@@ -9,8 +9,8 @@ const FOOTER = [
 
 export default function Footer() {
   return (
-    <div className="w-full max-w-6xl flex justify-between items-center pb-10 px-4 mx-auto">
-      <div className="flex items-center gap-16">
+    <div className="w-full max-w-6xl flex justify-between max-md:justify-end items-center pb-10 px-10 max-lg:px-6 max-md:px-4 mx-auto">
+      <div className="flex max-md:hidden flex-wrap items-center gap-16 max-lg:gap-8">
         {FOOTER.map((item) => (
           <p
             key={item.name}

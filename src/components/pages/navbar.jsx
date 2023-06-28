@@ -11,17 +11,18 @@ const NAVBAR = [
 
 export default function Navbar() {
   return (
-    <div className="w-full max-w-6xl flex justify-between items-center py-8 px-4 mx-auto">
+    <div className="w-full max-w-6xl flex justify-between items-center py-8 max-md:pb-0 px-10 max-lg:px-6 max-md:px-4 mx-auto">
       <Link href={"/"}>
-        <Image
-          src={"/svg/logo.svg"}
-          width={40}
-          height={40}
-          alt=""
-          className="hover:scale-105 active:scale-95 transition"
-        />
+        <div className="w-10 max-md:w-9 h-10 max-md:h-9 relative">
+          <Image
+            src={"/svg/logo.svg"}
+            fill
+            alt=""
+            className="hover:scale-105 active:scale-95 transition"
+          />
+        </div>
       </Link>
-      <div className="flex items-center gap-16">
+      <div className="flex max-md:hidden items-center gap-16">
         {NAVBAR.map((item) => (
           <p
             key={item.name}
