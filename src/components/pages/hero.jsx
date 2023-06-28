@@ -1,18 +1,23 @@
 import { useEffect, useState } from "react";
 import { Navbar } from ".";
+import Link from "next/link";
 
 const CONNECT = [
   {
     name: "LINKEDIN",
+    path: "https://www.linkedin.com/in/rafiqalhafizh/",
   },
   {
     name: "BEHANCE",
+    path: "https://www.behance.net/rafiqalhafizh",
   },
   {
-    name: "DRIBBLE",
+    name: "DRIBBBLE",
+    path: "https://dribbble.com/Due_UI",
   },
   {
     name: "GITHUB",
+    path: "https://github.com/rafiqola",
   },
 ];
 
@@ -58,12 +63,11 @@ export default function Hero() {
       </div>
       <div className="w-full max-w-md flex flex-wrap justify-between items-center gap-6 py-16 max-md:pt-16 max-md:pb-8 px-4 mx-auto">
         {CONNECT.map((item) => (
-          <p
-            key={item.name}
-            className="text-sm font-hellix-semibold hover:text-blue-400 hover:underline underline-offset-4 active:scale-95 transition cursor-pointer"
-          >
-            {item.name}
-          </p>
+          <Link key={item.name} href={item.path} target="_blank">
+            <p className="text-sm font-hellix-semibold hover:text-blue-400 hover:underline underline-offset-4 active:scale-95 transition cursor-pointer">
+              {item.name}
+            </p>
+          </Link>
         ))}
       </div>
     </div>

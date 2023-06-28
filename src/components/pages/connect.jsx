@@ -3,7 +3,7 @@ import { Button } from "../common/button";
 import Link from "next/link";
 
 const GROUP = ["codedesign", "dza", "strum-vehicles", "mything"];
-const SOCIAL_CONNECT = ["figma", "dribble", "behance"];
+const SOCIAL_CONNECT = ["figma", "dribbble", "behance"];
 
 export default function Connect() {
   return (
