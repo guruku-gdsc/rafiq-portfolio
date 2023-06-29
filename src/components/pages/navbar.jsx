@@ -36,7 +36,12 @@ export default function Navbar() {
         ))}
       </div>
       <div className="flex items-center gap-6">
-        <Button>Get Connect</Button>
+        <Link
+          href={"https://www.linkedin.com/in/rafiqalhafizh/"}
+          target="_blank"
+        >
+          <Button>Get Connect</Button>
+        </Link>
         <Image
           src={"/svg/icon-navbar-menu.svg"}
           width={24}

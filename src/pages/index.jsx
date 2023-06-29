@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Rafiq | UI/UX Designer</title>
+        <title>Rafiq Al Hafizh Adha | UI/UX Designer</title>
         <meta
           name="description"
           content="A UI/UX Designer based in Medan, Indonesia. I'm available to explore new
