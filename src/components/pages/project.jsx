@@ -15,7 +15,7 @@ const PROJECT = [
 export default function Project() {
   return (
     <div className="wrapper">
-      <div className="flex flex-col gap-4 my-20">
+      <div className="flex flex-col gap-4 py-10">
         {PROJECT.map((item, index) => (
           <Link key={index} href={item.link} target="_blank" data-aos="zoom-in">
             <div className="w-full relative aspect-[632/324]">

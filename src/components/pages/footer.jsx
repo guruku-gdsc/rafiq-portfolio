@@ -1,13 +1,18 @@
 import Link from "next/link";
 
-const FOOTER = [
-  { name: "WORK" },
-  { name: "PROJECT" },
-  { name: "EDUCATION" },
-  { name: "CONNECT" },
-];
+export default function Footer({
+  scrollToWork,
+  scrollToProject,
+  scrollToEducation,
+  scrollToConnect,
+}) {
+  const FOOTER = [
+    { name: "WORK", scrollTo: scrollToWork },
+    { name: "PROJECT", scrollTo: scrollToProject },
+    { name: "EDUCATION", scrollTo: scrollToEducation },
+    { name: "CONNECT", scrollTo: scrollToConnect },
+  ];
 
-export default function Footer() {
   return (
     <div className="w-full max-w-6xl flex justify-between max-md:justify-end items-center pb-10 px-10 max-lg:px-6 max-md:px-4 mx-auto">
       <div className="flex max-md:hidden flex-wrap items-center gap-16 max-lg:gap-8">
@@ -15,6 +20,7 @@ export default function Footer() {
           <p
             key={item.name}
             className="text-sm font-hellix-semibold hover:text-blue-400 hover:underline underline-offset-4 active:scale-95 transition cursor-pointer"
+            onClick={item.scrollTo}
           >
             {item.name}
           </p>

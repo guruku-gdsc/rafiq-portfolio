@@ -9,12 +9,17 @@ import {
 import Head from "next/head";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const workRef = useRef(null);
+  const projectRef = useRef(null);
+  const educationRef = useRef(null);
+  const connectRef = useRef(null);
 
   return (
     <>
@@ -29,12 +34,46 @@ export default function Home() {
         <link rel="icon" href="/svg/logo.svg" />
       </Head>
       <main>
-        <Hero />
-        <Work />
-        <Project />
-        <Education />
-        <Connect />
-        <Footer />
+        <Hero
+          scrollToWork={() =>
+            workRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToProject={() =>
+            projectRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToEducation={() =>
+            educationRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToConnect={() =>
+            connectRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <div ref={workRef}>
+          <Work />
+        </div>
+        <div ref={projectRef}>
+          <Project />
+        </div>
+        <div ref={educationRef}>
+          <Education />
+        </div>
+        <div ref={connectRef}>
+          <Connect />
+        </div>
+        <Footer
+          scrollToWork={() =>
+            workRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToProject={() =>
+            projectRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToEducation={() =>
+            educationRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          scrollToConnect={() =>
+            connectRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+        />
       </main>
     </>
   );

@@ -21,7 +21,12 @@ const CONNECT = [
   },
 ];
 
-export default function Hero() {
+export default function Hero({
+  scrollToWork,
+  scrollToProject,
+  scrollToEducation,
+  scrollToConnect,
+}) {
   const [text, setText] = useState("");
   const introText =
     "based in Medan, Indonesia. I'm available to explore new projects and inspire through my work.";
@@ -43,7 +48,12 @@ export default function Hero() {
 
   return (
     <div className="min-h-screen flex flex-col justify-between">
-      <Navbar />
+      <Navbar
+        scrollToWork={scrollToWork}
+        scrollToProject={scrollToProject}
+        scrollToEducation={scrollToEducation}
+        scrollToConnect={scrollToConnect}
+      />
       <div className="wrapper flex flex-col gap-4">
         <h1 className="font-hellix-bold text-8xl max-md:text-7xl font-bold">
           RAFIQ AL HAFIZH ADHA

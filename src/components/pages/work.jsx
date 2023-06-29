@@ -36,7 +36,7 @@ const WORK_HISTORY = [
 
 export default function Work() {
   return (
-    <div className="wrapper flex flex-col items-center gap-20 !my-20">
+    <div className="wrapper flex flex-col items-center gap-20 !py-10">
       <div className="flex flex-col items-center gap-4" data-aos="zoom-in">
         <h1 className="font-hellix-bold text-8xl max-md:text-7xl max-sm:text-5xl font-bold">
           INDONESIA

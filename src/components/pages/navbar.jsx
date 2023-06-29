@@ -3,14 +3,19 @@ import { Button } from "../common/button";
 import Link from "next/link";
 import { useState } from "react";
 
-const NAVBAR = [
-  { name: "WORK" },
-  { name: "PROJECT" },
-  { name: "EDUCATION" },
-  { name: "CONNECT" },
-];
+export default function Navbar({
+  scrollToWork,
+  scrollToProject,
+  scrollToEducation,
+  scrollToConnect,
+}) {
+  const NAVBAR = [
+    { name: "WORK", scrollTo: scrollToWork },
+    { name: "PROJECT", scrollTo: scrollToProject },
+    { name: "EDUCATION", scrollTo: scrollToEducation },
+    { name: "CONNECT", scrollTo: scrollToConnect },
+  ];
 
-export default function Navbar() {
   const [showNavbarSlide, setShowNavbarSlide] = useState(false);
 
   return (
@@ -30,6 +35,7 @@ export default function Navbar() {
           <p
             key={item.name}
             className="text-sm font-hellix-semibold hover:text-blue-400 hover:underline underline-offset-4 active:scale-95 transition cursor-pointer"
+            onClick={item.scrollTo}
           >
             {item.name}
           </p>

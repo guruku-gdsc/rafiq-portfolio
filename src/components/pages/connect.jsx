@@ -21,7 +21,7 @@ const SOCIAL_CONNECT = [
 export default function Connect() {
   return (
     <div className="wrapper">
-      <div className="flex flex-col gap-20 my-20">
+      <div className="flex flex-col gap-20 pt-10 pb-20">
         <div className="grid grid-cols-4 gap-4">
           {GROUP.map((group, index) => (
             <div

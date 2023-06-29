@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Education() {
   return (
     <div className="wrapper">
-      <div className="my-20">
+      <div className="py-10">
         <div className="flex flex-col gap-5" data-aos="fade-up">
           <div className="flex flex-col gap-3">
             <div className="flex justify-between items-center">
