@@ -3,7 +3,20 @@ import { Button } from "../common/button";
 import Link from "next/link";
 
 const GROUP = ["codedesign", "dza", "strum-vehicles", "mything"];
-const SOCIAL_CONNECT = ["figma", "dribbble", "behance"];
+const SOCIAL_CONNECT = [
+  {
+    name: "figma",
+    link: "/",
+  },
+  {
+    name: "dribbble",
+    link: "https://dribbble.com/Due_UI",
+  },
+  {
+    name: "behance",
+    link: "https://www.behance.net/rafiqalhafizh",
+  },
+];
 
 export default function Connect() {
   return (
@@ -32,10 +45,10 @@ export default function Connect() {
           </p>
           <div className="flex items-center gap-8">
             {SOCIAL_CONNECT.map((item, index) => (
-              <Link key={item} href={"/"}>
+              <Link key={item.name} href={item.link} target="_blank">
                 <div className="relative w-10 max-md:w-9 h-10 max-md:h-9">
                   <Image
-                    src={`/svg/icon-social-${item}.svg`}
+                    src={`/svg/icon-social-${item.name}.svg`}
                     width={40}
                     height={40}
                     alt=""

@@ -28,7 +28,7 @@ export default function Footer() {
           </span>
         </Link>{" "}
         | Designed by{" "}
-        <Link href={"/"} target="_blank">
+        <Link href={"https://dribbble.com/Due_UI"} target="_blank">
           <span className="hover:underline text-blue-400 cursor-pointer">
             @rafiq
           </span>
