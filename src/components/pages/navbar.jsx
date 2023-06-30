@@ -64,7 +64,7 @@ export default function Navbar({
         onClick={() => setShowNavbarSlide(false)}
       >
         <div
-          className="wrapper fixed top-0 left-1/2 -translate-x-1/2 flex flex-col items-center bg-black rounded-b-2xl !p-4"
+          className="wrapper fixed top-0 left-1/2 -translate-x-1/2 flex flex-col items-center bg-[rgba(0,0,0,0.5)] backdrop-blur rounded-b-2xl !p-4"
           onClick={(e) => e.stopPropagation()}
         >
           {NAVBAR.map((item, index) => (
