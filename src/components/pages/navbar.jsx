@@ -73,7 +73,10 @@ export default function Navbar({
               className={`text-sm font-hellix-semibold hover:text-blue-400 active:scale-95 transition cursor-pointer ${
                 index !== 0 ? "border-t" : "border-none"
               } border-white py-5`}
-              onClick={() => setShowNavbarSlide(false)}
+              onClick={() => {
+                item.scrollTo();
+                setShowNavbarSlide(false);
+              }}
             >
               {item.name}
             </p>
