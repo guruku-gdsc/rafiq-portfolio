@@ -60,7 +60,9 @@ export default function Connect() {
               </Link>
             ))}
           </div>
-          <Button className="max-w-[180px]">Let&apos;s Get E-mail</Button>
+          <Link href={"mailto:rafiqalhafizh12@gmail.com"}>
+            <Button className="max-w-[180px]">Let&apos;s Get E-mail</Button>
+          </Link>
         </div>
       </div>
     </div>
